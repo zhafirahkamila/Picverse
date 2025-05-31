@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="../Home/index.html">
+          <img src="../img/picverse.png" alt="" class="logo" />
+        </a>
+        <ul class="links">
+          <li><a href="../Home/index.html">Home</a></li>
+          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li><a href="../About-us/aboutUs.html">About Us</a></li>
+          <li><a href="../Community/community.html">Community</a></li>
+        </ul>
+        <a href="../Submission/submission.html" class="action_btn">Submission</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="../Home/index.html">Home</a></li>
+        <li><a href="../Gallery/gallery.html">Gallery</a></li>
+        <li><a href="../About-us/aboutUs.html">About Us</a></li>
+        <li><a href="../Community/community.html">Community</a></li>
+        <li><a href="../Submission/submission.html" class="action_btn">Submission</a></li>
+      </div>
+
+      <div class="container-slider">
+        <div class="slide">
+          <div class="item" style="background-image: url(../img/impressionism/CliffWalk.jpg);">
+            <div class="content">
+              <div class="name">The Cliff Walk at Pourville</div>
+              <div class="artist">Claude Monet</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/illustrative/underBlanket.jpeg);">
+            <div class="content">
+              <div class="name">Imagination Under The Blanket Fort</div>
+              <div class="artist">Safana Ajria Siregar</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/realism/Kampung.jpg);">
+            <div class="content">
+              <div class="name">Kampung Scene</div>
+              <div class="artist">Basuki Abdullah</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/stillLife/Passionately.png);">
+            <div class="content">
+              <div class="name">Passionately Prancing</div>
+              <div class="artist">Dawn Beckles</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/surrealism/HarlequinCarnival.jpg);">
+            <div class="content">
+              <div class="name">The Harlequin's Carnival</div>
+              <div class="artist">Joan Miró</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/impressionism/starry.jpeg);">
+            <div class="content">
+              <div class="name">The Starry Night</div>
+              <div class="artist">Vincent van Gogh</div>
+              <a href="../Gallery/gallery.html">
+                <button id="seeMore">See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h1>Our Services</h1>
+          <div class="line"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <a href="../Gallery/gallery.html">
+              <img src="../img/gallery.jpeg" alt="" />
+            </a>
+            <h3>Gallery</h3>
+            <p>
+              Explore a curated collection of artworks from talented creators. 
+              Each piece tells a unique story and reflects diverse artistic styles.
+            </p>
+          </div>
+          <div class="service">
+            <a href="../Community/community.html">
+              <img src="../img/community.jpg" alt="" />
+            </a>
+            <h3>Community</h3>
+            <p>
+              Connect with fellow artists. Exchange ideas, get inspired, 
+              and grow together through shared passion for art.
+            </p>
+          </div>
+          <div class="service">
+            <a href="../Submission/submission.html">
+              <img src="../img/ submission.jpg" alt="" />
+            </a>
+            <h3>Submission</h3>
+            <p>
+              Share your art with the world. 
+              Submit your work and become part of our growing creative community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+        <div class="section-title-tags">
+          <h1>Trending Tags</h1>
+          <div class="line"></div>
+        </div>
+        <div class="button-container">
+          <button class="menu-button">Portraits</button>
+          <button class="menu-button">Illustrative</button>
+          <button class="menu-button">Contemporary</button>
+          <button class="menu-button">Abstract</button>
+          <button class="menu-button">Expressionism</button>
+          <button class="menu-button">Impressionism</button>
+        </div>
+        <!-- <div class="card-container">
+          <div class="card">
+            <img src="./img/potraits/pearlEarrings.jpg" alt="Artwork" />
+            <div class="likes">
+                <i class="fa fa-heart" style="font-size:20px;color:red"></i>
+              <span>100 likes</span>
+            </div>
+            <h2>Title</h2>
+            <p class="artist">artist’s name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Lacus cursus non morbi
+              varius neque gravida eu orci pulvinar.
+            </p>
+            <button>Click</button>
+          </div>
+          <div class="card">
+            <img src="./img/potraits/pearlEarrings.jpg" alt="Artwork" />
+            <div class="likes">
+                <i class="fa fa-heart" style="font-size:20px;color:red"></i>
+              <span>100 likes</span>
+            </div>
+            <h2>Title</h2>
+            <p class="artist">artist’s name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Lacus cursus non morbi
+              varius neque gravida eu orci pulvinar.
+            </p>
+            <button>Click</button>
+          </div>
+          <div class="card">
+            <img src="./img/potraits/pearlEarrings.jpg" alt="Artwork" />
+            <div class="likes">
+                <i class="fa fa-heart" style="font-size:20px;color:red"></i>
+              <span>100 likes</span>
+            </div>
+            <h2>Title</h2>
+            <p class="artist">artist’s name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Lacus cursus non morbi
+              varius neque gravida eu orci pulvinar.
+            </p>
+            <button>Click</button>
+          </div>
+        </div> -->
+        <div id="random-gallery" class="card-container"></div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <div class="container">
+        <img src="../img/quote.png" alt="" />
+        <h1>
+          "The painter tries to master the tools of the trade so he can turn the
+          chaos of life into order, and by doing so, bring meaning and depth to
+          human existence."
+        </h1>
+        <div class="profile">
+          <img src="../img/Pablo.png" alt="" />
+          <h4>Pablo Picasso</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us">
+  <div class="about-container">
+    <div class="about-content">
+      <h4>ABOUT US</h4>
+      <h1>
+        Picverse is a digital platform that empowers artists worldwide by
+        providing a space to showcase their creativity, connect with a
+        global community, and inspire artistic expression.
+      </h1>
+      <a href="../About-us/aboutUs.html" class="btn">Let's Look</a>
+    </div>
+    <div class="about-image">
+      <img src="../img/potraits/monalisa.jpg" alt="About Us Image" />
+    </div>
+  </div>
+</section>
+
+    <section class="footer">
+      <div class="footer-content">
+          <img src="../img/picverse.png" alt="">
+          <div class="socials">
+              <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></i></a>
+              <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+          </div>
+
+          <ul class="list-footer">
+              <li>
+                  <a href="../Home/index.html">Home</a>
+              </li>
+              <li>
+                  <a href="../Gallery/gallery.html">Gallery</a>
+              </li>
+              <li>
+                  <a href="../About-us//aboutUs.html">About Us</a>
+              </li>
+              <li>
+                  <a href="../Community/community.html">Community</a>
+              </li>
+              <li>
+                  <a href="../Submission/submission.html">Submission</a>
+              </li>
+          </ul>
+          <p class="copyright">
+              Picverse @ 2025
+          </p>
+      </div>
+  </section>
+  <div id="artworkModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" alt="" id="modal-img"/>
+        <h2 id="modal-title"></h2>
+        <p id="modal-artist"></p>
+        <p id="modal-description"></p>
+        <div class="modal-likes">
+            <i class="fa fa-heart"></i>
+            <span id="modal-likes"></span>
+        </div>
+    </div>
+</div>
+  </body>
+
+  <script src="./index.js"></script>
+  <script src="../Gallery/gallery.js"></script>
+</html>

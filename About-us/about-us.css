@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Forum&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Federo&family=Forum&family=Linden+Hill:ital@0;1&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --background: #F8EDEB;
+    --primary: #6D2932;
+    --secondary: #DDBEBE;
+    --highlight: #912F40;
+    --text: #2D2D2D;
+    --white: #ffffff;
+    --black: #000000;
+    --highlighted: #4E7CB2;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    /* position: relative; */
+}
+
+.container {
+    max-width: 1200px;
+    /* padding: 10px; */
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-family: "Federo", serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--highlight);
+}
+
+/* NAVBAR */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 0 95px;
+    background: transparent;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+ul .links{
+    color: seagreen;
+}
+
+.navbar .toggle_btn {
+    color: var(--black);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: var(--white);
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 65px;
+    height: 0;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 100;
+}
+
+.dropdown_menu.open {
+    height: auto;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* ABOUT US aboutUs.html */
+.slider-about {
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-about {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* ABOUT US CONTENT SECTION */
+.list-about img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+section#about-us-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#about-us-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+    max-width: 550px;
+}
+
+#about-us-content p {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Forum", sans-serif;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+/* MISSION TEXT SECTION */
+#mission-text {
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px 0; */
+    padding-top: 50px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#mission-text .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    gap: 30px;
+    padding: 20px 20px ;
+}
+
+#mission-text h1 {
+    font-size: 25px;
+    font-family: "Forum", sans-serif;
+    align-self: center;
+    text-align: center;
+}
+
+/* MENUS SECTION */
+#menus .section-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#menus .section-menu a {
+  text-decoration: none;
+  color: var(--highlight);
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
+  transition: border-color 0.3s;
+}
+
+#menus .section-menu a:hover,
+#menus .section-menu a:focus {
+  border-color: var(--primary);
+}
+
+/* OUR MISSION CONTAINER GRID */
+.container-grid {
+  max-width: 1100px;
+  margin: 0 auto 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 0 1rem;
+}
+
+/* contentLeft & contentRight */
+.contentLeft, .contentRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The row inside contentLeft with images */
+.contentLeft .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Images styling */
+.imgWrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 30px 50px var(--primary);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imgWrapper img:hover {
+  transform: scale(1.05);
+}
+
+/* Text content on the right */
+.contentRight .content h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: var(--black);
+  font-weight: bold;
+  font-family: "Forum", sans-serif;
+}
+
+.contentRight h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.contentRight p {
+  font-size: 20px;
+  font-family: "Forum", sans-serif;
+  margin-bottom: 29px;
+  font-weight: lighter;
+}
+
+.container-grid:nth-child(even) {
+  direction: ltr; 
+}
+.container-grid:nth-child(even) > * {
+  direction: ltr;
+}
+
+#quote-text {
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
+
+#quote-text .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    gap: 30px;
+    padding: 20px 16px ;
+}
+
+#quote-text h1 {
+    font-size: 25px;
+    font-family: "Forum", sans-serif;
+    text-align: center;
+}
+
+#quote-text .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+#quote-text .profile img {
+    width: 50px;
+}
+
+#quote-text .profile h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.discover-text {
+    max-width: 700px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.discover-text h1 {
+    font-family: "Forum", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.discover-text p {
+    font-family: "Forum", sans-serif;
+    max-width: 400px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+/* About Images */
+/* Container utama setiap about section */
+.container.about-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 150px;
+  padding: 0 1rem;
+}
+
+/* Selang-seling posisi gambar dan teks */
+.container.about-section:nth-child(odd) {
+  grid-template-areas: 
+    "img content";
+}
+
+.container.about-section:nth-child(even) {
+  grid-template-areas: 
+    "content img";
+}
+
+/* Atur div gambar dan konten sesuai area */
+.about-img {
+  grid-area: img;
+}
+
+.about-content-painting {
+  grid-area: content;
+}
+
+/* Styling gambar */
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Styling teks */
+.about-content-painting h4 {
+  font-family: "Forum", sans-serif;
+  font-size: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.about-content-painting h1 {
+    font-family: "Forum", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btnClick { 
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btnClick:hover {
+    background: var(--highlight);
+    color: var(--white);
+    border: 1px solid var(--highlight);
+}
+
+/* FOOTER SECTION */
+.footer {
+    padding: 20px 0;
+    background-color: var(--secondary);
+}
+
+.footer .footer-content {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #4b4c4d;
+}
+
+.footer img {
+    width: 140px;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.footer .socials a {
+    font-size: 20px;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px 10px;
+    opacity: 0.7;
+}
+
+.footer .socials a:hover {
+    opacity: 1;
+}
+
+.list-footer a {
+    color: var(--primary);
+    font-size: 18px;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+.list-footer a:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--black50);
+}
+
+/* RESPONSIVE */
+@media(max-width: 1024px) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .action_btn {
+        font-size: 15px;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #about-us .container .about-content-painting {
+        max-width: 600px;
+        align-items: center;
+    }
+    
+    .about-content-painting h4 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .about-content-painting h1 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .discover-text h1 {
+        font-size: 40px;
+    }
+    
+    .discover-text p {
+        font-size: 18px;
+    }
+
+    .discover-text {
+        padding-bottom: 70px;
+    }
+}
+
+@media(max-width: 768px) {
+    .navbar .links, 
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .action_btn {
+        font-size: 15px;
+    }
+
+    #quote .container {
+        padding: 25px 20px ;
+    }
+    
+    #quote h1 {
+        font-size: 20px;
+        font-family: "Forum", sans-serif;
+        align-self: center;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    #quote .profile img {
+        width: 50px;
+    }
+    
+    #quote .profile h4 {
+        font-size: 12px;
+    }
+
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contentLeft {
+        display: none;
+    }
+
+    .contentRight {
+        text-align: center; 
+        align-items: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contentRight p {
+        max-width: 550px;
+    }
+
+    .about-image img {
+        width: 280px;
+        height: 350px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    #about-us .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        padding: 10px 50px;
+    }
+
+    .about-img {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    #about-us .container .about-content {
+        align-items: center;
+    }
+
+    .about-content h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #about-us .container .about-content-painting {
+        max-width: 600px;
+        align-items: center;
+    }
+    
+    .about-content-painting h4 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .about-content-painting h1 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .discover-text h1 {
+        font-size: 40px;
+    }
+    
+    .discover-text p {
+        font-size: 18px;
+    }
+
+    .discover-text {
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    
+    .discover-text::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 2px;
+        background-color: #000;
+        margin: 10px auto 0;
+    }
+
+    .container.about-section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img"
+        "content";
+        gap: 1.5rem;
+    }
+
+    .about-img, .about-content-painting {
+        text-align: center;
+    }
+
+    .about-content-painting h1 {
+        font-size: 22px;
+    }
+
+    .btnClick {
+        padding: 8px 19px;
+        font-size: 16px;
+    }
+
+    .footer img {
+        width: 120px;
+        height: 75px;
+        margin-bottom: 30px;
+    }
+
+    .footer ul li {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .list-footer a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 576px) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .navbar .toggle_btn {
+        font-size: 1.5rem;
+    }
+
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+        top: 80px;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .action_btn {
+        font-size: 15px;
+    }
+
+    #about-us .container {
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 350px;
+    }
+
+    #about-us .container .about-content-painting {
+        max-width: 600px;
+        align-items: center;
+    }
+    
+    .about-content-painting h4 {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .about-content-painting h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    #about-us-content h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+        max-width: 550px;
+    }
+    
+    #about-us-content p {
+        font-size: 18px;
+        max-width: 250px;
+    }
+
+    #mission-text h1 {
+        font-size: 20px;
+    }
+
+    .discover-text h1 {
+        max-width: 300px;
+        font-size: 30px;
+    }
+    
+    .discover-text p {
+        max-width: 300px;
+        font-size: 15px;
+    }
+
+    .discover-text {
+        padding-bottom: 20px;
+        padding-top: 80px;
+    }
+}

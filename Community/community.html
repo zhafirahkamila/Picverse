@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./community.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Community</title>
+  </head>
+  <body class="body-community">
+    <!---------------------- NAVBAR ------------------------>
+    <div class="navbar navbar-two">
+        <a href="../Home/index.html">
+          <img src="../img/picverse.png" alt="" class="logo" />
+        </a>
+        <ul class="links links-two">
+          <li><a href="../Home/index.html">Home</a></li>
+          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li><a href="../About-us/aboutUs.html">About Us</a></li>
+          <li><a href="../Community/community.html">Community</a></li>
+        </ul>
+        <a href="../Submission/submission.html" class="action_btn">Submission</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+  
+      <div class="dropdown_menu dm">
+        <li><a href="../Home/index.html">Home</a></li>
+        <li><a href="../Gallery/gallery.html">Gallery</a></li>
+        <li><a href="../About-us/aboutUs.html">About Us</a></li>
+        <li><a href="../Community/community.html">Community</a></li>
+        <li><a href="../Submission/submission.html" class="action_btn">Submission</a></li>
+      </div>
+
+      <!------------------------- MAIN ---------------------------->
+      <main>
+        <div class="container">
+            <!---------------------- LEFT ------------------------>
+            <div class="left">
+                <form class="create-post">
+                  <div class="profile-photo">
+                    <img src="../img/Maudy2.jpg" alt="">
+                  </div>
+                  <input type="text" placeholder="what's on your mind, Maudy Ayunda?" id="create-post">
+                  <input type="submit" value="Post" class="btn-post btn-primary">
+                </form>
+
+                <!---------------------- FEEDS ------------------------>
+                <div class="feeds" id="feeds-container">
+                
+                </div>
+            </div>
+            <!---------------------- RIGHT ------------------------>
+            <div class="right">
+              <div class="active-section">
+                <div class="heading">
+                  <h3>Active Users</h3>
+                </div>
+                <!----------------- LIST OF ACTIVE USERS ------------------>
+                <div id="active-users-container">
+                  
+                </div>
+              </div>
+              <!----------------- END OF LIST OF ACTIVE USERS ------------------>
+
+              <!----------------- RECENT ACTIVITY ------------------>
+              <div class="active-section">
+                <div class="heading">
+                  <h3>Recent Activity</h3>
+                </div>
+                <div id="recent-activity-container">
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+
+      <section class="footer">
+        <div class="footer-content">
+            <img src="../img/picverse.png" alt="">
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+            </div>
+  
+            <ul class="list-footer">
+                <li>
+                    <a href="../Home/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../Gallery/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../About-us/aboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="../Community/community.html">Community</a>
+                </li>
+                <li>
+                    <a href="../Submission/submission.html">Submission</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Picverse @ 2025
+            </p>
+        </div>
+    </section>
+  </body>
+  <script src="../Home/index.js"></script>
+  <script src="./community.js"></script>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./submission.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+    <title>Submission Page</title>
+</head>
+<body>
+    <header class="header-about">
+        <div class="navbar">
+          <a href="../Home/index.html">
+            <img src="../img/picverse.png" alt="" class="logo" />
+          </a>
+          <ul class="links">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Gallery/gallery.html">Gallery</a></li>
+            <li><a href="../About-us/aboutUs.html">About Us</a></li>
+            <li><a href="../Community/community.html">Community</a></li>
+          </ul>
+          <a href="../Submission/submission.html" class="action_btn">Submission</a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+  
+        <div class="dropdown_menu">
+          <li><a href="../Home/index.html">Home</a></li>
+          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li><a href="../About-us/aboutUs.html">About Us</a></li>
+          <li><a href="../Community/community.html">Community</a></li>
+          <li><a href="../Submission/submission.html" class="action_btn">Submission</a></li>
+        </div>
+        <div class="slider-about">
+          <div class="list-about">
+            <div class="item">
+              <img src="../img/artist.jpg" alt=""/>
+            </div>
+          </div>
+          <section id="about-us-content">
+            <h1 class="heading">Show Us Your Art</h1>
+            <p>
+                Submit Your Masterpiece and Let the World See!
+            </p> 
+            <a href="#submission-text" class="btn">Drop Your Art!</a>
+      </header>
+  
+      <section id="mission-text">
+        <div class="container">
+          <h1>
+            Got an amazing piece of art to showcase? Whether it's digital, or traditional, 
+            we’d love to see it! Fill out the form below to submit your artwork,
+            add some details, and let your creativity shine. 
+            Let’s build an inspiring gallery together!
+          </h1>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="photo-gallery">
+          <div class="column">
+            <div class="photo">
+              <img src="../img/potraits/ginevra.jpg" alt="">
+            </div>
+            <div class="photo">
+              <img src="../img/abstract/compositionX.jpg" alt="" class="composition">
+            </div>
+            <div class="photo">
+              <img src="../img/illustrative/Problem.jpg" alt="" class="problem">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="../img/impressionism/CliffWalk.jpg" alt="" class="CliffWalk">
+            </div>
+            <div class="photo">
+              <img src="../img/realism/Kampung.jpg" alt="" class="kampung">
+            </div>
+            <div class="photo">
+              <img src="../img/contemporary/TheComplicatedBeauty.jpg" alt="" class="beauty">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="../img/illustrative/underBlanket.jpeg" alt="" class="underBlanket">
+            </div>
+            <div class="photo">
+              <img src="../img/stillLife/Grapes.png" alt="" class="kitchen">
+            </div>
+            <div class="photo">
+              <img src="../img/expressionism/DanceLife.jpg" alt="" class="bedroom">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+         <section id="submission-text">
+        <div id="submission" class="sub-text">
+          <h1>Share Your Art Here</h1>
+          <p>"<span class="red-asterisk">*</span>" indicates required fields</p>
+        </div>
+      </section> 
+      </div>
+     
+      <section class="container">
+        <form action="#" class="form" id="submission-form">
+          <div class="input-box">
+            <label>Email<span class="red-asterisk">*</span></label>
+            <input type="text" placeholder="Type Email Here (@gmail.com)">
+          </div>
+          <div class="input-box">
+            <label>Title<span class="red-asterisk">*</span></label>
+            <input type="text" placeholder="Type Title Here">
+          </div>
+          <div class="input-box">
+            <label>Description<span class="red-asterisk">*</span></label>
+            <input type="text" placeholder="Type Description Here">
+          </div>
+
+          <!-- Dropdown Tag* -->
+          <div class="input-box">
+            <label>Tag<span class="red-asterisk">*</span></label>
+            <div class="select-box">
+                <select>
+                  <option value="" disabled selected>Select a tag</option>
+                  <option value="portrait">Portrait</option>
+                  <option value="landscape">Landscape</option>
+                  <option value="abstract">Abstract</option>
+                  <option value="realism">Realism</option>
+                  <option value="surrealism">Surrealism</option>
+                  <option value="expressionism">Expressionism</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Please attach up to 6 jpegs that represent your work<span class="red-asterisk">*</span></label>
+          </div>
+          <div class="drop-section">
+            <div class="col">
+              <div class="cloud-icon">
+                <img src="../img/cloud-image.png" alt="">
+              </div>
+              <span>Drag & Drop your files here</span>
+              <span>OR</span>
+              <button class="file-section">Browse Files</button>
+              <input type="file" class="file-selector-input" multiple>
+            </div>
+            <div class="col">
+              <div class="drop-here">Drop Here</div>
+            </div>
+          </div>
+          <div class="upload-list">
+            <!-- Saat file masih diupload -->
+            <!-- <div class="upload-item uploading">
+                <div class="file-icon">
+                    <img src="./img/img-icons.png" alt="">
+                </div>
+                <div class="file-info">
+                    <div class="file-name">Uploading File...</div>
+                    <div class="upload-progress">
+                        <span style="width: 0%;"></span>
+                    </div>
+                    <div class="file-status">Uploading 0%</div>
+                </div>
+                <div class="upload-actions">
+                  <button class="cancel-upload">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+              </div> -->
+            </div>
+        
+            <!-- Setelah file berhasil diupload -->
+            <div class="upload-item uploaded" style="display: none;">
+                <div class="file-icon">
+                    <img src="../img/img-icons.png" alt="">
+                </div>
+                <div class="file-info">
+                    <div class="file-name">Uploaded_File.png</div>
+                    <div class="file-size">82 KB</div>
+                </div>
+                <div class="file-status">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+        </div>
+      
+          <div class="ai-generated">
+            <label class="label-text">Your artwork is ai-generated?<span class="red-asterisk">*</span></label>
+            <div class="ai-option">
+              <div class="ai">
+                <input type="radio" id="check-yes" name="ai">
+                <label for="check">Yes</label>
+              </div>
+              <div class="ai">
+                <input type="radio" id="check-no" name="ai">
+                <label for="check">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+
+        <!-- Pop-up Success -->
+<div id="successPopup" class="popup">
+  <div class="popup-content">
+    <p>Successfully submitted your artwork!</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+      </section>
+
+      <section class="footer">
+        <div class="footer-content">
+            <img src="../img/picverse.png" alt="">
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+            </div>
+
+            <ul class="list-footer">
+                <li>
+                    <a href="../Home/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../Gallery/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../About-us/aboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="../Community/community.html">Community</a>
+                </li>
+                <li>
+                    <a href="../Submission/submission.html">Submission</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Picverse @ 2025
+            </p>
+        </div>
+    </section>
+</body>
+<script src="../Home/index.js"></script>
+<script src="./submission.js"></script>
+</html>
