@@ -1,0 +1,56 @@
+## Penjelasan Website ##
+Picverse adalah sebuah platform komunitas bagi para seniman digital untuk membagikan karya mereka, saling terhubung, dan mendapatkan apresiasi. 
+Platform ini dirancang agar mudah diakses dan nyaman digunakan oleh siapa pun yang tertarik dengan dunia seni digital.
+
+Fitur-Fitur Utama dalam Picverse:
+1. Home Page: 
+Halaman utama yang menyambut pengguna dengan tampilan menarik dan informasi terbaru seputar komunitas atau karya terbaru yang diunggah.
+
+2. Gallery Page:
+Tempat pengguna dapat melihat berbagai karya seni digital yang telah dipublikasikan oleh para seniman. 
+
+3. Submission Page:
+Halaman khusus untuk para seniman mengunggah karya mereka. Di sini, mereka diharuskan mengisi email, title, description, tag, image, dan juga Ai-generated.
+
+4. Community Page:
+Fitur ini memungkinkan pengguna untuk berinteraksi, berdiskusi, dan saling memberikan dukungan satu sama lain. 
+Komunitas ini menjadi ruang bagi seniman untuk berbagi pengalaman dan inspirasi.
+
+5. About Us Page:
+Halaman yang menjelaskan latar belakang, visi, misi, dan key features dari Picverse sebagai platform seni digital.
+
+Key Features:
+1. Community: Picverse membangun komunitas yang suportif, di mana seniman bisa saling mengenal, berdiskusi, dan tumbuh bersama dengan pengguna lain.
+2. Submission: Fitur pengunggahan karya yang mudah dan praktis, agar seniman bisa menampilkan karyanya dengan cepat dan rapi.
+3. Gallery: Galeri online tempat semua orang bisa melihat karya digital dari seluruh dunia — mendukung eksplorasi dan inspirasi seni tanpa batas.
+
+
+## Referensi Design Website ##
+
+https://www.artsy.net
+https://www.saatchiart.com/en-id?srsltid=AfmBOopTRI5FVOPUOCEmqNTKeJI8dpxCpN0LeS9DR38dVecWDoTyZhCI
+
+
+
+## SUMBER FOTO-FOTO ##
+
+https://id.pinterest.com
+https://www.vangoghmuseum.nl/en/collection
+https://www.singulart.com/blog/en/2023/10/11/12-most-famous-portraits-paintings/?srsltid=AfmBOoq4dh9jbKSj6p8a1hWMRo7EyyNaMyfour5ytfbQHON0YO5b3oft
+https://www.theartist.me/art-inspiration/25-most-famous-realism-paintings/#google_vignette
+https://theartling.com/en/artzine/brilliant-indonesian-artists-contemporary-art/?srsltid=AfmBOoqWPTrWHOqhjw5ekVOxevXEFUzEtRk92esaLxHVtfQd0F3UCNDT
+https://blog.artsper.com/en/lifestyle/25-works-of-contemporary-art-you-need-to-see/
+https://www.samwoolfe.com/2019/02/surreal-paintings-by-interesni-kazki.html
+https://www.thisiscolossal.com/2023/12/rafael-silveira-human-psyche/
+https://www.singulart.com/blog/en/2023/10/19/salvador-dali-paintings/?srsltid=AfmBOorl-EAI88LzgZOg3jGBkzSWbamjsg1Pv-Bi51hUMUd7lZ8thav2
+https://www.artsy.net
+https://www.saatchiart.com/en-id?srsltid=AfmBOoro6uH3UstPai4mqCYEcnxfxjhh6q8M5_iwPjmZ0Gts48cOFKmL
+
+
+## Sumber Icon yang digunakan ##
+
+https://fontawesome.com
+https://iconduck.com
+https://icons8.com
+https://iconify.design
+
