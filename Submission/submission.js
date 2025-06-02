@@ -123,22 +123,63 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault(); // mencegah reload
 
-      const email = form.querySelector('input[placeholder*="Email"]');
-      const title = form.querySelector('input[placeholder*="Title"]');
-      const desc = form.querySelector('input[placeholder*="Description"]');
+      const emailInput = form.querySelector('input[placeholder*="Email"]');
+      const titleInput = form.querySelector('input[placeholder*="Title"]');
+      const descInput = form.querySelector('input[placeholder*="Description"]');
       const tag = form.querySelector("select");
       const aiYes = form.querySelector('#check-yes');
       const aiNo = form.querySelector('#check-no');
 
+      const email = emailInput.value.trim();
+      const title = titleInput.value.trim();
+      const desc = descInput.value.trim();
+      const tagValue = tag.value;
+      const aiChecked = aiYes.checked || aiNo.checked;
+
       if (
-        email.value.trim() === "" ||
-        title.value.trim() === "" ||
-        desc.value.trim() === "" ||
-        !tag.value ||
-        (!aiYes.checked && !aiNo.checked) ||
+        email === "" &&
+        title === "" &&
+        desc === "" &&
+        !tagValue &&
+        !aiChecked &&
         uploadedFiles.length === 0
       ) {
-        alert("Please complete all required fields and upload at least one image.");
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      if (email === "") {
+        alert("Email is required!");
+        return;
+      }
+
+      if (!email.endsWith("@gmail.com")) {
+        alert("Email must end with @gmail.com");
+        return;
+      }
+
+      if (title === "") {
+        alert("Title is required!");
+        return;
+      }
+
+      if (desc === "") {
+        alert("Description is required!");
+        return;
+      }
+
+      if (!tagValue) {
+        alert("Please select a tag.");
+        return;
+      }
+
+      if (uploadedFiles.length === 0) {
+        alert("Upload at least one image.");
+        return;
+      }
+
+      if (!aiChecked) {
+        alert("Please indicate whether the artwork is AI-generated.");
         return;
       }
 
@@ -166,8 +207,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Jalankan saat dokumen siap
 document.addEventListener('DOMContentLoaded', setupToggleButton);
-
-
-  
-    
-  

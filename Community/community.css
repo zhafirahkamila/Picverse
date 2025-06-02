@@ -22,12 +22,11 @@
 body {
     background-color: var(--background);
     margin: 0;
-    /* position: relative; */
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
-    /* padding: 10px; */
     margin: auto;
 }
 
@@ -69,7 +68,7 @@ a:hover {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 ul .links{
@@ -78,7 +77,7 @@ ul .links{
 
 .navbar .toggle_btn {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 32px;
     cursor: pointer;
     display: none;
 }
@@ -86,7 +85,7 @@ ul .links{
 .action_btn {
     background-color: var(--primary);
     color: var(--white);
-    padding: 0.6rem 1rem;
+    padding: 10px 16px;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -122,7 +121,7 @@ ul .links{
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +148,7 @@ main {
 main .container {
     display: grid;
     grid-template-columns: 85vh 30vw;
-    column-gap: 50px;
+    column-gap: 70px;
     position: relative;
 }
 
@@ -159,19 +158,19 @@ main .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 16px;
     background: var(--secondary);
-    padding: 0.4rem 0.7rem;
+    padding: 6.5px 11px;
     border-radius: 50px;
 }
 
 .left .create-post input[type="text"] {
     justify-self: start;
     width: 100%;
-    padding-left: 1rem;
+    padding-left: 16px;
     background: transparent;
     color: var(--black);
-    margin-right: 1rem;
+    margin-right: 16px;
     border: none;
 }
 
@@ -190,7 +189,7 @@ main .container {
 .btn-post {
     background-color: var(--primary);
     color: var(--white);
-    padding: 0.4rem 1.5rem;
+    padding: 6.5px 24px;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -201,7 +200,7 @@ main .container {
 }
 
 .profile-photo {
-    width: 2.7rem;
+    width: 43px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -220,14 +219,14 @@ main .container {
 main .container .right {
     height: max-content;
     position: sticky;
-    top: -18rem;
+    top: -288px;
     bottom: 0;
 }
 
 .right .active-section {
     background: var(--secondary);
     border-radius: 20px;
-    padding: 0.4rem 1.5rem;
+    padding: 6.5px 24px;
     margin-bottom: 20px;
 }
 
@@ -301,18 +300,13 @@ main .container .right {
     border-radius: 20px;
     padding: 20px;
     margin: 20px 0;
-    font-size: 0.8rem;
+    font-size: 13px;
     line-height: 1.5;
 }
 
-/* .left .feed .head {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .left .feed .user {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .left .feed .tweets {
@@ -447,7 +441,7 @@ small {
     main .container .right {
         position: relative;
         top: 0;
-        margin-top: 2rem;
+        margin-top: 32px;
     }
 }
 
@@ -503,11 +497,11 @@ small {
     }
 
     .navbar .toggle_btn {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .dropdown_menu {
-        left: 2rem;
+        left: 32px;
         width: unset;
         top: 80px;
     }
@@ -530,6 +524,6 @@ small {
     }
 
     .btn-post {
-        padding: 0.4rem 1rem;
+        padding: 6.5px 16px;
     }
 }

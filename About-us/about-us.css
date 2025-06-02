@@ -22,12 +22,10 @@
 body {
     background-color: var(--background);
     margin: 0;
-    /* position: relative; */
 }
 
 .container {
     max-width: 1200px;
-    /* padding: 10px; */
     margin: auto;
 }
 
@@ -69,7 +67,7 @@ a:hover {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 ul .links{
@@ -78,7 +76,7 @@ ul .links{
 
 .navbar .toggle_btn {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 32px;
     cursor: pointer;
     display: none;
 }
@@ -86,7 +84,7 @@ ul .links{
 .action_btn {
     background-color: var(--primary);
     color: var(--white);
-    padding: 0.6rem 1rem;
+    padding: 10px 16px;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -122,7 +120,7 @@ ul .links{
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +136,7 @@ ul .links{
     scale: 0.95;
 }
 
-/* ABOUT US aboutUs.html */
+/* ABOUT US */
 .slider-about {
     width: 100%;
     height: 80vh;
@@ -198,7 +196,6 @@ section#about-us-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 40px 0; */
     padding-top: 50px;
     margin: 0;
     width: 100%;
@@ -225,8 +222,8 @@ section#about-us-content {
 #menus .section-menu {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 32px;
+  margin-bottom: 48px;
 }
 
 #menus .section-menu a {
@@ -235,7 +232,7 @@ section#about-us-content {
   font-weight: 700;
   font-size: 20px;
   border-bottom: 2px solid transparent;
-  padding-bottom: 0.3rem;
+  padding-bottom: 5px;
   transition: border-color 0.3s;
 }
 
@@ -247,28 +244,25 @@ section#about-us-content {
 /* OUR MISSION CONTAINER GRID */
 .container-grid {
   max-width: 1100px;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 80px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
-/* contentLeft & contentRight */
 .contentLeft, .contentRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* The row inside contentLeft with images */
 .contentLeft .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-/* Images styling */
 .imgWrapper img {
   width: 100%;
   height: 200px;
@@ -283,7 +277,6 @@ section#about-us-content {
   transform: scale(1.05);
 }
 
-/* Text content on the right */
 .contentRight .content h2 {
   font-size: 50px;
   margin-bottom: 30px;
@@ -382,19 +375,16 @@ section#about-us-content {
     font-weight: lighter;
 }
 
-/* About Images */
-/* Container utama setiap about section */
 .container.about-section {
   max-width: 1100px;
-  margin: 3rem auto;
+  margin: 48px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 150px;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
-/* Selang-seling posisi gambar dan teks */
 .container.about-section:nth-child(odd) {
   grid-template-areas: 
     "img content";
@@ -405,7 +395,6 @@ section#about-us-content {
     "content img";
 }
 
-/* Atur div gambar dan konten sesuai area */
 .about-img {
   grid-area: img;
 }
@@ -414,7 +403,6 @@ section#about-us-content {
   grid-area: content;
 }
 
-/* Styling gambar */
 .about-img img {
   width: 100%;
   height: auto;
@@ -429,7 +417,6 @@ section#about-us-content {
   transform: scale(1.05);
 }
 
-/* Styling teks */
 .about-content-painting h4 {
   font-family: "Forum", sans-serif;
   font-size: 30px;
@@ -628,7 +615,21 @@ section#about-us-content {
     }
 
     .contentRight p {
+        font-size: 18px;
         max-width: 550px;
+    }
+
+    .contentRight .content h2 { 
+        font-size: 35px;
+    }
+
+    .contentRight h4 {
+        font-size: 20px;
+    }
+
+    #quote-text h1 {
+        font-size: 20px;
+        max-width: 350px;
     }
 
     .about-image img {
@@ -703,7 +704,7 @@ section#about-us-content {
         grid-template-areas: 
         "img"
         "content";
-        gap: 1.5rem;
+        gap: 24px;
     }
 
     .about-img, .about-content-painting {
@@ -741,11 +742,11 @@ section#about-us-content {
     }
 
     .navbar .toggle_btn {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .dropdown_menu {
-        left: 2rem;
+        left: 32px;
         width: unset;
         top: 80px;
     }

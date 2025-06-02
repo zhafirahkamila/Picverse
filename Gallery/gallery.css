@@ -22,12 +22,10 @@
 body {
     background-color: var(--background);
     margin: 0;
-    /* position: relative; */
 }
 
 .container {
     max-width: 1200px;
-    /* padding: 10px; */
     margin: auto;
 }
 
@@ -70,7 +68,7 @@ a:hover {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 ul .links{
@@ -79,7 +77,7 @@ ul .links{
 
 .navbar .toggle_btn {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 32px;
     cursor: pointer;
     display: none;
 }
@@ -87,7 +85,7 @@ ul .links{
 .action_btn {
     background-color: var(--primary);
     color: var(--white);
-    padding: 0.6rem 1rem;
+    padding: 10px 16px;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -123,7 +121,7 @@ ul .links{
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,14 +154,6 @@ ul .links{
 .gallery-page .dm li .action_btn {
   color: white;
 }
-
-/* .gallery-page .dm {
-    background: var(--highlighted2);
-} */
-
-/* .gallery-page .dm a {
-    color: var(--primary);
-} */
 
 .tag-title {
     font-family: "Playfair Display", serif;
@@ -238,14 +228,6 @@ ul .links{
     align-items: flex-start;
 }
 
-.description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 /* CONTAINER GALLERY SECTION */
 .card {
     display: flex;
@@ -295,11 +277,18 @@ ul .links{
 
 .card .artist {
     font-weight: 550;
+    margin-top: 2px;
 }
 
-.card p {
-    margin-top: 5px;
-    font-weight: normal;
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+    font-weight: 400;
+    color: grey;
 }
 
 .card button { 
@@ -384,6 +373,7 @@ ul .links{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
     font-size: 18px;
     color: red;
 }
@@ -429,12 +419,6 @@ ul .links{
 .footer .socials a:hover {
     opacity: 1;
 }
-
-/* .footer ul {
-    margin-top: 0;
-    padding: 0;
-    line-height: 1.6;
-} */
 
 .list-footer a {
     color: var(--primary);
@@ -554,7 +538,7 @@ section {
     }
 
     .categories-card-container {
-        gap: 20px;
+        gap: 15px;
     }
 
     .footer img {
@@ -579,6 +563,10 @@ section {
     #active-users-container {
         max-height: 200px; 
     }
+
+    .modal-content {
+        max-height: 70vh;
+    }
 }
 
 @media(max-width: 576px) {
@@ -587,11 +575,11 @@ section {
     }
 
     .navbar .toggle_btn {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .dropdown_menu {
-        left: 2rem;
+        left: 32px;
         width: unset;
         top: 80px;
     }
@@ -607,5 +595,10 @@ section {
 
     .action_btn {
         font-size: 15px;
+    }
+
+     .modal-content {
+        max-width: 300px;
+        max-height: 50vh;
     }
 }
