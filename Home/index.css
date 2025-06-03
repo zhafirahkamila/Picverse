@@ -23,6 +23,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -1096,6 +1097,7 @@ section#about-us-content {
         top: 50%;
         width: 90%;
         height: 600px;
+        margin-top: 30px;
     }
 
     .slide .item:nth-child(3) {
@@ -1255,7 +1257,7 @@ section#about-us-content {
     }
 
     .container-slider {
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .slide .item:nth-child(3) {
