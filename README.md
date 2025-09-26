@@ -32,7 +32,7 @@ This project was built as part of Human and Computer Interaction (HCI) coursewor
    git clone https://github.com/zhafirahkamila/Picverse.git
 
 ## Screenshots
-<img width="1000" height="513" alt="Screenshot 2025-09-26 at 19 35 50" src="https://github.com/user-attachments/assets/76a7cd4e-adfa-4c3a-b7ee-5ee5f446c721" />
+<img width="500" height="513" alt="Screenshot 2025-09-26 at 19 35 50" src="https://github.com/user-attachments/assets/76a7cd4e-adfa-4c3a-b7ee-5ee5f446c721" />
 <img width="1440" height="737" alt="Screenshot 2025-09-26 at 19 36 15" src="https://github.com/user-attachments/assets/1faea413-e621-440d-993a-1bcb580b9447" />
 <img width="1440" height="799" alt="Screenshot 2025-09-26 at 19 36 30" src="https://github.com/user-attachments/assets/bd1c2fdb-4a93-4bc8-b9ad-8f7e14a1db20" />
 <img width="1440" height="812" alt="Screenshot 2025-09-26 at 19 37 41" src="https://github.com/user-attachments/assets/0e6f820e-76ed-4935-ab65-623567180389" />
