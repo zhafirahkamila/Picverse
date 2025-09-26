@@ -34,7 +34,7 @@ This project was built as part of Human and Computer Interaction (HCI) coursewor
 ## Screenshots
 <img width="500" height="550" alt="Screenshot 2025-09-26 at 19 35 50" src="https://github.com/user-attachments/assets/76a7cd4e-adfa-4c3a-b7ee-5ee5f446c721" />
 <img width="500" height="550" alt="Screenshot 2025-09-26 at 19 42 45" src="https://github.com/user-attachments/assets/dfe54cc3-1584-4cb7-92d2-da1d64729041" />
-<img width="500" height="620" alt="Screenshot 2025-09-26 at 19 36 30" src="https://github.com/user-attachments/assets/bd1c2fdb-4a93-4bc8-b9ad-8f7e14a1db20" />
+<img width="500" height="550" alt="Screenshot 2025-09-26 at 19 43 56" src="https://github.com/user-attachments/assets/aa1cf186-edc8-4e25-9220-3b5e15b64a3d" />
 <img width="500" height="550" alt="Screenshot 2025-09-26 at 19 37 41" src="https://github.com/user-attachments/assets/0e6f820e-76ed-4935-ab65-623567180389" />
 <img width="500" height="550" alt="Screenshot 2025-09-26 at 19 37 55" src="https://github.com/user-attachments/assets/dcefb13f-9521-49a6-a097-860e789cd86f" />
 <img width="500" height="550" alt="Screenshot 2025-09-26 at 19 38 10" src="https://github.com/user-attachments/assets/fa8dc4ec-97d8-4939-ad1c-c57b1efb5539" />
